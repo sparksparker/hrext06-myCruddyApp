@@ -1,8 +1,11 @@
 $(document).ready(function(){
   console.log('jQuery loaded');
 
+  var $btnSubmit = $('.btn-submit');
+  var $btnDelete = $('.btn-delete');
+
   // write to local storage from input when button save clicked
-  $('.btn-submit').on('click', function(){
+  $btnSubmit.on('click', function(){
     localStorage.setItem('inputFieldValue', $('.text-entry').val());
     var myItemInStorage = localStorage.getItem('inputFieldValue');
     console.log('myItemInStorage', myItemInStorage);
@@ -13,7 +16,7 @@ $(document).ready(function(){
   });
 
   // delete from local storage when delete button clicked
-  $('.btn-delete').on('click', function(){
+  $btnDelete.on('click', function(){
     localStorage.removeItem('inputFieldValue');
   });
 
