@@ -7,6 +7,7 @@ $(document).ready(function(){
   var $textFirstName = $('.text-firstname');
   var $textLastName = $('.text-lastname');
   var $textEmail = $('.text-email');
+  var $listDisplayField = $('.list-display-field');
 
   // store multiple values
   $btnSubmit.on('click', function() {
@@ -21,6 +22,7 @@ $(document).ready(function(){
       var test = localStorage.getItem('contactInfo');
       console.log('contactInfo', test);
     }
+    $listDisplayField.text(test);
 
   });
 
@@ -31,7 +33,7 @@ $(document).ready(function(){
   //   console.log('myItemInStorage', myItemInStorage);
   //
   //   // display the value here
-  //   $('.list-display-field').text(myItemInStorage); // ??
+  // $('.list-display-field').text(test); // ??
   //
   // });
 
