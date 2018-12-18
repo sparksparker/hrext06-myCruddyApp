@@ -4,6 +4,7 @@ $(document).ready(function(){
 
   var $btnSubmit = $('.btn-submit');
   var $btnDelete = $('.btn-delete');
+  var $btnDeleteAll = $('.btn-delete-all');
   var $textFirstName = $('.text-firstname');
   var $textLastName = $('.text-lastname');
   var $textEmail = $('.text-email');
@@ -22,8 +23,7 @@ $(document).ready(function(){
       var test = localStorage.getItem('contactInfo');
       console.log('contactInfo', test);
     }
-    $listDisplayField.text(test);
-
+    // $listDisplayField.text(test);
   });
 
   // write to local storage from input when button save clicked
@@ -40,6 +40,10 @@ $(document).ready(function(){
   // delete from local storage when delete button clicked
   $btnDelete.on('click', function(){
     localStorage.removeItem('contactInfo');
+  });
+
+  $btnDeleteAll.on('click', function() {
+    localStorage.clear();
   });
 
 });
