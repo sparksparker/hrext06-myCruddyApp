@@ -26,24 +26,13 @@ $(document).ready(function(){
     // $listDisplayField.text(test);
   });
 
-  // write to local storage from input when button save clicked
-  // $btnSubmit.on('click', function(){
-  //   localStorage.setItem('inputFieldValue', $('.text-entry').val());
-  //   var myItemInStorage = localStorage.getItem('inputFieldValue');
-  //   console.log('myItemInStorage', myItemInStorage);
-  //
-  //   // display the value here
-  // $('.list-display-field').text(test); // ??
-  //
+  // delete from local storage when delete button clicked
+  // $btnDelete.on('click', function(){
+  //   localStorage.removeItem('contactInfo');
   // });
 
-  // delete from local storage when delete button clicked
-  $btnDelete.on('click', function(){
-    localStorage.removeItem('contactInfo');
-  });
-
-  $btnDeleteAll.on('click', function() {
-    localStorage.clear();
-  });
+  // $btnDeleteAll.on('click', function() {
+  //   localStorage.clear();
+  // });
 
 });
