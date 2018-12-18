@@ -21,10 +21,16 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [x] Display stored value in proper div
 
 ### Next Sprint (what are we trying to code)
-Examples: Replace with your own.
-- [ ] animate when new data is added
-- [ ] color code the data by timestape (older more greyed out)
-- [ ] Read from yelp api to get good bagel advice in a city
-- [ ] save my local storage to a remote storage for back up
+
+- [ ] Landing page for preview
+- [ ] Input fields for contact info
+- [ ] Submit ('give me a preview') leads to a quick questionnaire
+  - [ ] Department
+  - [ ] Features
+  - [ ] Number of employees
+  - [ ] Budget
+- [ ] Result page with matching software(s)
+  - [ ] Delete feature(s)
+  - [ ] Delete all
 
 - [ ] Optional: Host on repl.it (html,css, js)
