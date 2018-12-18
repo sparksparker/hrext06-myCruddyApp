@@ -13,11 +13,10 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
     - [x] What about if we have more than one value?
     - [x] how do we add multiple values?
         - [x] maybe use an array?
-        - [ ] maybe use multiple keys? create new keyname each time
 
 - [x] Delete local storage
     - [x] delete button storage.removeItem()
-    - [ ] delete all storage.clear()
+    - [x] delete all storage.clear()
 - [x] Display stored value in proper div
 
 ### Next Sprint (what are we trying to code)
