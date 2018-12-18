@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  console.log('jQuery loaded');
 
   var dataArr = [];
 
@@ -11,17 +10,18 @@ $(document).ready(function(){
 
   // store multiple values
   $btnSubmit.on('click', function() {
-    if('localStorage' in window && window['localStorage'] !== null) {
-        var user = {
-          'firstname': $textFirstName.val(),
-          'lastname': $textLastName.val(),
-          'email': $textEmail.val(),
-        }
-        var record = JSON.stringify(user);
-        localStorage.setItem(user.firstname, record);
-        localStorage.setItem(user.lastname, record);
-        localStorage.setItem(user.email, record);
+    if (typeof (Storage) !== 'undefined') {
+      var dataObj = {
+        firstname: $textFirstName.val(),
+        lastname: $textLastName.val(),
+        email: $textEmail.val(),
+      }
+      dataArr.push(dataObj);
+      localStorage.setItem('contactInfo', JSON.stringify(dataArr));
+      var test = localStorage.getItem('contactInfo');
+      console.log('contactInfo', test);
     }
+
   });
 
   // write to local storage from input when button save clicked
