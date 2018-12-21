@@ -28,7 +28,6 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
   - [x] Department
   - [x] Features
   - [x] Number of employees
-  - [x] Budget
 - [ ] Result page with matching software(s)
   - [ ] Delete feature(s)
   - [ ] Delete all
