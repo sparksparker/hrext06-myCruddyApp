@@ -13,3 +13,7 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.preview-page {
+  display: none;
+}
