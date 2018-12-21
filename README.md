@@ -19,7 +19,7 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
     - [x] delete all storage.clear()
 - [x] Display stored value in proper div
 
-### Next Sprint (what are we trying to code)
+### Sprint 2 (what are we trying to code)
 
 - [x] Landing page
 - [x] Input fields for contact info
@@ -29,8 +29,9 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
   - [x] Features
   - [x] Number of employees
 - [x] Result page
-  - [ ] Matching software
   - [x] Delete feature(s)
   - [x] Delete all
 
-- [ ] Optional: Host on repl.it (html,css, js)
+### Sprint 3
+
+- [ ] Matching software
