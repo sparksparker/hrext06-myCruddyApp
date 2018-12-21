@@ -21,8 +21,9 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 
 ### Next Sprint (what are we trying to code)
 
-- [ ] Landing page for preview
-- [ ] Input fields for contact info
+- [x] Landing page
+- [x] Input fields for contact info
+- [x] Preview page
 - [ ] Submit ('give me a preview') leads to a quick questionnaire
   - [ ] Department
   - [ ] Features
