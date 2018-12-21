@@ -35,6 +35,7 @@ $(document).ready(function(){
     // $listDisplayField.text(test);
   });
 
+
   // delete from local storage when delete button clicked
   // $btnDelete.on('click', function(){
   //   localStorage.removeItem('contactInfo');
