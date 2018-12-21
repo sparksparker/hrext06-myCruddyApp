@@ -1,10 +1,69 @@
-h1 {
-  text-align: center;
+.landing-page {
+  background-color: beige;
 }
 
-h2 {
-  text-align: center;
+.landing-page-header1 {
+  text-align: left;
+  font-size: 15pt;
+  color: darkblue;
 }
+
+.landing-page-header2 {
+  text-align: left;
+  font-size: 12pt;
+  font-weight: normal;
+}
+
+.landing-page-header3 {
+  text-align: center;
+  font-size: 80pt;
+  margin-bottom: 180px;
+  margin-top: 200px;
+}
+
+.landing-page-header4 {
+  text-align: center;
+  font-size: 16pt;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.landing-page-header5 {
+  text-align: center;
+  font-size: 12pt;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.input-field-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 0 auto;
+}
+
+.text-firstname {
+  margin: 3px;
+  height: 25px;
+  width: 200px;
+}
+
+.text-lastname {
+  margin: 3px;
+  width: 200px;
+}
+
+.text-email {
+  margin: 3px;
+  width: 200px;
+}
+
+.btn-input-field-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
 
 footer {
   position: fixed;
@@ -12,19 +71,57 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  font-size: 8pt;
 }
+
+/*  */
 
 .preview-page {
+  background-color: beige;
   display: none;
 }
 
+.preview-header1 {
+  text-align: left;
+  font-size: 15pt;
+  color: darkblue;
+}
+
+.display-field {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+.survey-form {
+  text-align: center;
+}
+
+/*  */
+/*  */
+
 .results-page {
+  background-color: beige;
   display: none;
+}
+
+.results-header1 {
+  text-align: left;
+  font-size: 15pt;
+  color: darkblue;
+}
+
+.results-display-field {
+  text-align: center;
 }
 
 .survey-results {
   width: 200px;
   white-space: pre-line;
+}
+
+.results-display-field-container {
+  text-align: center;
 }
 
 .btn-not-you {

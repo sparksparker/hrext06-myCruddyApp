@@ -28,8 +28,9 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
   - [x] Department
   - [x] Features
   - [x] Number of employees
-- [ ] Result page with matching software(s)
-  - [ ] Delete feature(s)
-  - [ ] Delete all
+- [x] Result page
+  - [ ] Matching software
+  - [x] Delete feature(s)
+  - [x] Delete all
 
 - [ ] Optional: Host on repl.it (html,css, js)
