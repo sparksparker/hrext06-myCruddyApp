@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   // setting variables
   var $btnSubmitLanding = $('.btn-submit-landing');
+  var $btnSubmitPreview = $('.btn-submit-preview');
   var $btnDelete = $('.btn-delete');
   var $btnDeleteAll = $('.btn-delete-all');
   var $textFirstName = $('.text-firstname');
@@ -12,9 +13,9 @@ $(document).ready(function(){
   var $previewPage = $('.preview-page');
   var $btnBackPreview = $('.btn-back-preview');
   var $displayField = $('.display-field');
+  var $resultsDisplayField = $('.results-display-field');
+  var $resultsPage = $('.results-page');
 
-  // hiding preview page on load
-  $previewPage.hide();
 
   // setting global variable for JSON.stringify
   var dataArr = [];
@@ -43,16 +44,26 @@ $(document).ready(function(){
     // $listDisplayField.text(test);
   });
 
+  // delete from local storage when delete button clicked
+  $btnDelete.on('click', function(){
+    localStorage.removeItem('contactInfo');
+  });
+
+// go back to preview page
   $btnBackPreview.on('click', function() {
     $landingPage.toggle();
     $previewPage.toggle();
   });
 
+  $btnSubmitPreview.on('click', function() {
+    $previewPage.toggle();
+    $resultsPage.toggle();
 
-  // delete from local storage when delete button clicked
-  $btnDelete.on('click', function(){
-    localStorage.removeItem('contactInfo');
+    $resultsDisplayField.text(`Great news, ${$textFirstName.val()}! We found some matches for you.`)
   });
+
+
+
 
   // $btnDeleteAll.on('click', function() {
   //   localStorage.clear();
