@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
-  var dataArr = [];
-
+  // setting variables
   var $btnSubmit = $('.btn-submit');
   var $btnDelete = $('.btn-delete');
   var $btnDeleteAll = $('.btn-delete-all');
@@ -9,6 +8,14 @@ $(document).ready(function(){
   var $textLastName = $('.text-lastname');
   var $textEmail = $('.text-email');
   var $listDisplayField = $('.list-display-field');
+  var $landingPage = $('.landing-page');
+  var $previewPage = $('.preview-page');
+
+  // hiding preview page on load
+  $previewPage.hide();
+
+  // setting global variable for JSON.stringify
+  var dataArr = [];
 
   // store multiple values
   $btnSubmit.on('click', function() {
@@ -23,6 +30,8 @@ $(document).ready(function(){
       var test = localStorage.getItem('contactInfo');
       console.log('contactInfo', test);
     }
+    $landingPage.empty();
+    $previewPage.show();
     // $listDisplayField.text(test);
   });
 
