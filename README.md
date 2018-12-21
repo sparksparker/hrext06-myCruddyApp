@@ -24,11 +24,11 @@ Create Read Update Delete using localStorage with JS, HTML and CSS
 - [x] Landing page
 - [x] Input fields for contact info
 - [x] Preview page
-- [ ] Submit ('give me a preview') leads to a quick questionnaire
-  - [ ] Department
-  - [ ] Features
-  - [ ] Number of employees
-  - [ ] Budget
+- [x] Submit ('give me a preview') leads to a quick questionnaire
+  - [x] Department
+  - [x] Features
+  - [x] Number of employees
+  - [x] Budget
 - [ ] Result page with matching software(s)
   - [ ] Delete feature(s)
   - [ ] Delete all
