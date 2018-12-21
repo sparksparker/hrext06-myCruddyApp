@@ -19,7 +19,6 @@ $(document).ready(function(){
   var $btnRestartSurvey = $('.btn-restart-survey');
   var $btnNotYou = $('.btn-not-you');
 
-
   // setting global variable for JSON.stringify
   var dataArr = [];
 
@@ -44,7 +43,6 @@ $(document).ready(function(){
       $displayField.text(`Thanks, ${firstName}! Here's a few questions to get us started.`);
       // console.log('contactInfo', test);
     }
-    // $listDisplayField.text(test);
   });
 
   // delete from local storage when delete button clicked
@@ -72,7 +70,6 @@ $(document).ready(function(){
       Department: ${department}
       Features: ${features}
       Employees: ${employees}`);
-
   });
 
   $btnRestartSurvey.on('click', function() {
@@ -89,5 +86,6 @@ $(document).ready(function(){
   // $btnDeleteAll.on('click', function() {
   //   localStorage.clear();
   // });
+
 
 });
