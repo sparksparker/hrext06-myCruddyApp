@@ -33,7 +33,7 @@
     <form class='survey-form'>
       <!-- department -->
       Department:
-      <select name='department'>
+      <select id='department'>
         <option value='select'>--Select--</option>
         <option value='sales'>Sales</option>
         <option value='human-resources'>Human Resources</option>
@@ -42,7 +42,7 @@
       <!-- features -->
       <br><br>
       Features:
-      <select name='features'>
+      <select id='features'>
         <option value='select'>--Select--</option>
         <option value='crm'>CRM</option>
         <option value='automation'>Automation</option>
@@ -52,7 +52,7 @@
       <!-- number of employees -->
       <br><br>
       Number of Employees:
-      <select name='number-of-employees'>
+      <select id='employees'>
         <option value='select'>--Select--</option>
         <option value='0-50'>0-50</option>
         <option value='51-200'>51-200</option>
@@ -72,8 +72,18 @@
     <h1 class='results-header1'>3rd Header 1</h1>
     <h2 class='results-header2'>3rd Header 2</h2>
 
-    <div class="results-display-field"></div>
+    <div class='results-container'>
+      <div class='survey-results'></div>
+      <button class="btn-restart-survey" type="button">Make Changes</button>
+    </div>
     <br><br>
+
+    <div class='results-display-field-container'>
+      <div class="results-display-field"></div>
+      <button class='btn-not-you'type="button">(not you?)</button>
+    </div>
+    <br><br>
+
 
 
 
